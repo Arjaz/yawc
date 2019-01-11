@@ -6,8 +6,14 @@
 </head>
 <body>
     <h1>Count</h1>
-    <p>Yout text:</p>
+    <p>Your text containes {{ w_number }} words</p>
+    <p>Here it is:</p>
     <p>{{ fulltext }}</p>
-    <p>It contained {{ w_number }}  words</p>
+    <p>The most used words:</p>
+    <ol>
+        {% for word, usage in word_usage %}
+        <li>"{{ word }}" is used {{ usage }} times</li>
+        {% endfor %}
+    </ol>
 </body>
 </html>
