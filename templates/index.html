@@ -2,14 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>YAWC</title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="about/">About</a></li>
+        </ul>
+    </nav>
+    <div class="container">
     <h1>YAWC</h1>
-    <form action="{% url 'count' %}">
-        <textarea name="fulltext" cols="40" rows="10"></textarea>
-        <br>
-        <input type="submit" value="Count">
-    </form>
+        <form action="{% url 'count' %}">
+            <textarea name="fulltext" cols="40" rows="10"></textarea>
+            <br>
+            <input type="submit" value="Count">
+        </form>
+    </div>
 </body>
 </html>

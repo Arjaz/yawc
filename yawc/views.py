@@ -20,3 +20,6 @@ def count(request):
     
     sorted_words = sorted(word_usage.items(), key=lambda x: x[1], reverse=True)
     return render(request, 'count.html', {'fulltext': fulltext, 'w_number': w_number, 'word_usage': sorted_words})
+
+def about(request):
+    return render(request, 'about.html')

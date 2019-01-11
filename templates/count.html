@@ -2,18 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>YAWC</title>
 </head>
 <body>
-    <h1>Count</h1>
-    <p>Your text containes {{ w_number }} words</p>
-    <p>Here it is:</p>
-    <p>{{ fulltext }}</p>
-    <p>The most used words:</p>
-    <ol>
-        {% for word, usage in word_usage %}
-        <li>{{ word }} — {{ usage }}</li>
-        {% endfor %}
-    </ol>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Count</h1>
+        <p>Your text containes {{ w_number }} words</p>
+        <p>Here it is:</p>
+        <p>{{ fulltext }}</p>
+        <p>The most used words:</p>
+        <ol>
+            {% for word, usage in word_usage %}
+            <li>{{ word }} — {{ usage }}</li>
+            {% endfor %}
+        </ol>
+    </div>
 </body>
-</html>
